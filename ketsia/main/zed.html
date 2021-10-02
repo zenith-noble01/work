@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="./ketsia/500.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title> Ketsia Ketinol</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #108888;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .meco{
+          background: whitesmoke;
+          color: black;
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 20px;
+      }
+      .container{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: calc(100vh - 80px);
+      }
+      .wishes{
+          flex-basis: 40%;
+          display: flex;
+          height: calc(100vh - 40px);
+          align-items: center;
+          justify-content: center;
+          /* background: blue; */
+      }
+      .swiper-container {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        max-height: 300px;
+      }
+      .slope{
+          display: flex;
+          align-items: center;
+          flex-basis: 60%;
+          justify-content: center;
+          height: calc(100vh - 40px);
+          /* background: red; */
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        object-fit: contain;
+      }
+      .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        background: whitesmoke;
+        object-fit: contain;
+      }
+      .box img{
+        width: 100%;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+      <nav>
+        <div class="logo">
+            <h2 class="active">
+                Ketsia
+            </h2>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li class="active"><a href="" class="active">Home</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+    </nav>
+    <div class="container">
+         <div class="wishes">
+           <div class="box">
+             <img src="./ketsia/hbd.jpg" alt="">
+           </div>
+         </div>
+         <div class="slope">
+             <div class="swiper-container mySwiper">
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide meco"> 
+                     <p>Birthdays are a new start, a fresh beginning and a time to pursue new endeavors with new goals. Move forward with confidence and courage. You are a very special person. May today and all of your days be amazing!</p>
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="./ketsia/1.jpg" />
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="./ketsia/2.jpg" />
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="./ketsia/1.jpg" />
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="./ketsia/3.jpg" />
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="./ketsia/4.jpg" />
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="./ketsia/5.jpg" />
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="./ketsia/7.jpg" />
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="./ketsia/8.jpg" />
+                 </div>
+               </div>
+               <div class="swiper-pagination"></div>
+             </div>
+         </div>
+    </div>
+    <!-- Swiper -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
